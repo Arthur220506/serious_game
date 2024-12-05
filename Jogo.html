@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@!#Porta do% c0fre--!</title>
+    <link rel="stylesheet" href="/css/jogo.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="terminal">
+        <audio id="background-audio" autoplay loop>
+            <source src="/sound/trilha_sonora.mp3" type="audio/mpeg">
+        </audio>
+        <div class="window-title">O_Assalto.exe</div>
+        <center>
+            <h1>Desvendando o Cofre</h1>
+            <div class="section" id="explanationSection">
+                <h2>Explicação</h2>
+                <div class="explanation" id="explanation">
+                    <!-- Explicação será carregada aqui -->
+                </div>
+                <button onclick="startLevel()">Entendi! Vamos começar</button>
+            </div>
+            
+    <div class="section" id="gameSection" style="display: none;">
+        <p class="message" id="encryptedMessage"></p>
+        <input type="text" id="userInput" placeholder="Digite sua resposta aqui">
+        <button onclick="checkAnswer()">Verificar</button>
+        <button onclick="showHint()">Pedir Dica</button>
+        <div class="hint-section" id="hintSection" style="display: none;">
+            <p class="hint" id="hint"></p>
+            <img id="hintImage">
+        </div>
+        <div class="result" id="result"></div>
+        <div class="controls" id="nextLevelControl" style="display: none;">
+            <button onclick="nextLevel()">Avançar para a próxima fase</button>
+        </div>
+    </div>
+        </center>
+    </div>
+    <script>
+        window.onload = function () {
+            const audio = document.getElementById('background-audio');
+            audio.volume = 0.1; 
+        };
+    </script>
+    <script src="/js/jogo.js"></script>
+
+</body>
+</html>

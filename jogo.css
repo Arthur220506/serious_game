@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #0f0;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.explanation, .message, .result, .controls, .hint-section {
+    margin: 20px 0;
+}
+
+.explanation {
+    font-style: italic;
+    color: #91ac96;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #000000;
+    color: rgb(12, 114, 29);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #03250c;
+}
+
+.result {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.hint {
+    font-size: 1em;
+    color: #e67e22;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
